@@ -1,5 +1,5 @@
 
-> Open this page at [https://bouw-je-bep.github.io/bouw-je-bep/](https://bouw-je-bep.github.io/bouw-je-bep/)
+> Open this page at [https://bouw-je-bep.github.io/Bouw-je-BEP/](https://bouw-je-bep.github.io/Bouw-je-BEP/)
 
 ## Use as Extension
 
@@ -18,21 +18,18 @@ To edit this repository in MakeCode.
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/bouw-je-bep/bouw-je-bep** and click import
 
-## Blocks preview
+## BEP Servomotors #BEP.servoWrite
+How to move parts of BEP:
+```blocks
+BEP.servoWrite(BEP.Servos.Rechteroog, 1)
+BEP.servoWrite(BEP.Servos.Linkeroog, 1)
+BEP.servoWrite(BEP.Servos.Geletandwiel, 1)
+BEP.servoWrite(BEP.Servos.Rechtwenkbrauw, 1)
+BEP.servoWrite(BEP.Servos.Linkerwenkbrauw, 1)
+```
+Change the numbers and hit download.
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-basic.forever(function on_forever() {
-    basic.showIcon(IconNames.Heart)
-    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
-    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
-    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
-    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
-    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
-    
 ![A rendered view of the blocks](https://github.com/bouw-je-bep/bouw-je-bep/raw/master/.github/makecode/blocks.png)
-
-
 
 
 #### Metadata (used for search, rendering)
