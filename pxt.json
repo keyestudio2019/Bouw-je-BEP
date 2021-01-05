@@ -4,8 +4,7 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "fireled": "github:4tronix/FireLedsBase"
     },
     "files": [
         "main.ts",
