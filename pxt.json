@@ -1,10 +1,11 @@
 {
-    "name": "Test2305982305",
+    "name": "Bouw je BEP",
     "version": "1.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
-        "fireled": "github:4tronix/FireLedsBase"
+        "fireled": "github:4tronix/FireLedsBase",
+        "microphone": "*"
     },
     "files": [
         "main.ts",
