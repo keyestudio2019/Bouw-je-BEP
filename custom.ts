@@ -153,7 +153,7 @@ namespace BEP {
         //% blockId=BEP_I2Cservo_write
         //% block="Zet %Servo|op stand %stand"
         //% group="Servo motors"
-        //% stand.min=1 stand.max=3
+        //% stand.min=0 stand.max=2
         
         export function servoWrite(Servo: Servos, stand: number): void {
             if (initalised == false) {
@@ -164,19 +164,19 @@ namespace BEP {
         let choice = stand
         let degrees2 = stand
         
-        if (choice <=1){
+        if (choice <=0){
             degrees2=65
         }
-        else if(choice ==2){
+        else if(choice ==1){
             degrees2 = 90
         }
-        else if(choice >=3){
+        else if(choice >=2){
             degrees2 = 130
         }
-        //else if(choice >=4){
+        //else if(choice >=3){
         //    degrees2 = 110
         //}
-        //else if(choice == 5){
+        //else if(choice == 4){
         //degrees2 = 135
         //}
         
@@ -280,7 +280,7 @@ namespace BEP {
       * @param color Standard RGB Led Colours eg: #ff0000
       */
     //% blockId="val_colours" block=%color
-    //% blockHidden=false
+    //% blockHidden=true
     //% group="LED lampje"
     //% weight=100
     //% blockGap=8
