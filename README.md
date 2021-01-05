@@ -22,8 +22,18 @@ To edit this repository in MakeCode.
 
 This image shows the blocks code from the last commit in master.
 This image may take a few minutes to refresh.
-
+basic.forever(function on_forever() {
+    basic.showIcon(IconNames.Heart)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
+    
 ![A rendered view of the blocks](https://github.com/bouw-je-bep/bouw-je-bep/raw/master/.github/makecode/blocks.png)
+
+
+
 
 #### Metadata (used for search, rendering)
 
