@@ -1,4 +1,4 @@
-//> Open this page at [https://bouw-je-bep.github.io/Bouw-je-BEP/](https://bouw-je-bep.github.io/Bouw-je-BEP/)
+> Open this page at [Bouw je BEP extension](https://bouw-je-bep.github.io/Bouw-je-BEP/)
 
 ![](https://bouwjebep.nl/wp-content/uploads/2020/08/BEP_Logo_V5.png)
 
@@ -22,7 +22,7 @@ To edit this repository in MakeCode.
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/bouw-je-bep/bouw-je-bep** and click import
 
-## BEP Servomotors #BEP.servoWrite
+## BEP Servomotors #servoWrite
 How to move parts of BEP:
 ```blocks
 BEP.servoWrite(BEP.Servos.Rechteroog, 1)
