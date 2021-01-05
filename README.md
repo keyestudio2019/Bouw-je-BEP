@@ -1,5 +1,9 @@
+//> Open this page at [https://bouw-je-bep.github.io/Bouw-je-BEP/](https://bouw-je-bep.github.io/Bouw-je-BEP/)
 
-> Open this page at [https://bouw-je-bep.github.io/Bouw-je-BEP/](https://bouw-je-bep.github.io/Bouw-je-BEP/)
+![](https://bouwjebep.nl/wp-content/uploads/2020/08/BEP_Logo_V5.png)
+
+# MakeCode Package for the 4tronix ServoBit Servo Controller Board & Bouw je BEP kit
+This extension uses the [4tronix ServoBit](https://4tronix.co.uk/servobit) with a PCA9685 to control a Bouw je BEP (https://bouwjebep.nl) robot kit with 5 independent servos. Helper commands are available to set individual servos to 3 differant degrees to program BEP's expressions or emotion.
 
 ## Use as Extension
 
@@ -29,8 +33,10 @@ BEP.servoWrite(BEP.Servos.Linkerwenkbrauw, 1)
 ```
 Change the numbers and hit download.
 
-![A rendered view of the blocks](https://github.com/bouw-je-bep/bouw-je-bep/raw/master/.github/makecode/blocks.png)
 
+## License
+
+MIT 
 
 #### Metadata (used for search, rendering)
 
