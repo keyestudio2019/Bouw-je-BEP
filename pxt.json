@@ -1,7 +1,8 @@
 {
     "name": "Bouw je BEP",
     "version": "1.0.9",
-    "description": "",
+    "description": "Blocks to use with the Bouw je BEP kit in PXT",
+    "license": "MIT",
     "dependencies": {
         "core": "*",
         "fireled": "github:4tronix/FireLedsBase",

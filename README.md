@@ -1,6 +1,6 @@
 > Open this page at [Bouw je BEP extension](https://bouw-je-bep.github.io/Bouw-je-BEP/)
 
-# Bouw je BEP for MakeCode
+# Bouw je BEP blocks for micro:bit
 This extension uses the [4tronix ServoBit](https://4tronix.co.uk/servobit) with a PCA9685 to control a Bouw je BEP (https://bouwjebep.nl) robot kit with 5 independent servos. Helper commands are available to set individual servos to 3 differant degrees to program BEP's expressions or emotion.
 
 ## Use as Extension
@@ -20,7 +20,7 @@ To edit this repository in MakeCode.
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/bouw-je-bep/bouw-je-bep** and click import
 
-## BEP Servomotors #bep-servowrite
+## BEP Servomotors #BEP.servoWrite
 How to move parts of BEP:
 
 ```blocks
