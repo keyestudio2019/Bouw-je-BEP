@@ -165,7 +165,7 @@ namespace BEP {
         let degrees2 = stand
         
         if (choice <=0){
-            degrees2=65
+            degrees2= 50
         }
         else if(choice ==1){
             degrees2 = 90
