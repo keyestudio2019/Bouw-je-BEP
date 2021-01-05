@@ -1,1 +1,30 @@
-// tests go here; this will not be compiled when this package is used as an extension.
+input.onButtonPressed(Button.A, function on_button_pressed_a() {
+    BEP.setLedColor(0xFF0000)
+    basic.pause(1000)
+    BEP.setLedColor(0x00FF00)
+    basic.pause(1000)
+    BEP.setLedColor(0x0000FF)
+    basic.pause(1000)
+})
+input.onButtonPressed(Button.AB, function on_button_pressed_ab() {
+    BEP.ledClear()
+})
+input.onButtonPressed(Button.B, function on_button_pressed_b() {
+    BEP.startFlash(0x00FF00, 500)
+})
+basic.forever(function on_forever() {
+    basic.showIcon(IconNames.Heart)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 1)
+    basic.pause(1000)
+    basic.showIcon(IconNames.Yes)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 4)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 4)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 4)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 4)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 4)
+    basic.pause(1000)
+})
