@@ -24,7 +24,6 @@
      //% block=black
      Black = 0x000000
  }
-
 /**
  * Blocks for programming Bouw je BEP with the 4tronix Servobit I2C 16-Servo Driver Board 
  */
@@ -154,7 +153,7 @@ namespace BEP {
         //% blockId=BEP_I2Cservo_write
         //% block="Zet %Servo|op stand %stand"
         //% group="Servo motors"
-        //% stand.min=1 stand.max=4
+        //% stand.min=1 stand.max=3
         
         export function servoWrite(Servo: Servos, stand: number): void {
             if (initalised == false) {
@@ -168,17 +167,17 @@ namespace BEP {
         if (choice <=1){
             degrees2=65
         }
-        else if(choice==2){
-            degrees2 = 87
+        else if(choice ==2){
+            degrees2 = 90
         }
-        else if(choice==3){
-            degrees2 = 109
-        }
-        else if(choice >=4){
+        else if(choice >=3){
             degrees2 = 130
         }
+        //else if(choice >=4){
+        //    degrees2 = 110
+        //}
         //else if(choice == 5){
-        //	degrees2 = 130
+        //degrees2 = 135
         //}
         
     
