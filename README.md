@@ -1,7 +1,9 @@
 > Open this page at [Bouw je BEP extension](https://bouw-je-bep.github.io/Bouw-je-BEP/)
 
 # Bouw je BEP blocks for micro:bit
-This extension uses the [4tronix ServoBit](https://4tronix.co.uk/servobit) with a PCA9685 to control a Bouw je BEP (https://bouwjebep.nl/onze-leskisten) robot kit with 5 independent servos. Helper commands are available to set individual servos to 3 differant degrees to program BEP's expressions or emotion.
+With [Bouw jeB BEP](https://bouwjebep.nl) (Build your BEP) we aim to make technology more accessible, fun and personal for all children and teachers. BEP stands for build emote and play. It combines technology with emotion and provides a base for anyone to create their own unique character. BEP stimulates the creativity of children and the growth of technical skills. We understand technology and coding can be very intimidating, that's why we designed BEP to be approachable to be used and teach! 
+
+This extension uses the [4tronix ServoBit](https://4tronix.co.uk/servobit) with a PCA9685 to control a Bouw je BEP (https://bouwjebep.nl/onze-leskisten) robot kit with 5 independent servos and a LED. Helper commands are available to set individual servos to 3 differant degrees to program BEP's expressions or emotion.
 
 ## Use as Extension
 This repository can be added as an **extension** in MakeCode.
@@ -9,14 +11,10 @@ This repository can be added as an **extension** in MakeCode.
 * open [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
-* search for **https://github.com/bouw-je-bep/bouw-je-bep** and import
+* search for **Bouw je BEP** and import
 
 ## Edit this project ![Build status badge](https://github.com/bouw-je-bep/bouw-je-bep/workflows/MakeCode/badge.svg)
 To edit this repository in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/bouw-je-bep/bouw-je-bep** and click import
 
 ## BEP Servomotors #BEP.servoWrite
 How to move parts of BEP:
@@ -34,17 +32,6 @@ Change the numbers and hit download.
 The 4tronix ServoBit has a single FireLed fitted to act as a status indicator.
 This library defines some helpers for using it.
 The LED is automatically updated after every setting
-
-![](http://4tronix.co.uk/servobit/clearLed.jpg)
-
-![](http://4tronix.co.uk/servobit/setLed.jpg)
-
-![](http://4tronix.co.uk/servobit/setBrightness.jpg)
-
-![](http://4tronix.co.uk/servobit/startFlash.jpg)
-
-![](http://4tronix.co.uk/servobit/stopFlash.jpg)
-
 
 ```blocks
 // Clear LED
