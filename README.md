@@ -1,7 +1,7 @@
 > Open this page at [Bouw je BEP extension](https://bouw-je-bep.github.io/Bouw-je-BEP/)
 
 # Bouw je BEP blocks for micro:bit
-With [Bouw jeB BEP](https://bouwjebep.nl) (Build your BEP) we aim to make technology more accessible, fun and personal for all children and teachers. BEP stands for build emote and play. It combines technology with emotion and provides a base for anyone to create their own unique character. BEP stimulates the creativity of children and the growth of technical skills. We understand technology and coding can be very intimidating, that's why we designed BEP to be approachable to be used and teach! 
+With [Bouw je BEP](https://bouwjebep.nl) (Build your BEP) we aim to make technology more accessible, fun and personal for all children and teachers. BEP stands for build emote and play. It combines technology with emotion and provides a base for anyone to create their own unique character. BEP stimulates the creativity of children and the growth of technical skills. We understand technology and coding can be very intimidating, that's why we designed BEP to be approachable to be used and teach! 
 
 This extension uses the [4tronix ServoBit](https://4tronix.co.uk/servobit) with a PCA9685 to control a Bouw je BEP (https://bouwjebep.nl/onze-leskisten) robot kit with 5 independent servos and a LED. Helper commands are available to set individual servos to 3 differant degrees to program BEP's expressions or emotion.
 
