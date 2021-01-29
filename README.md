@@ -20,11 +20,11 @@ To edit this repository in MakeCode.
 How to move parts of BEP:
 
 ```blocks
-BEP.servoWrite(BEP.Servos.Rechteroog, 1)
-BEP.servoWrite(BEP.Servos.Linkeroog, 1)
-BEP.servoWrite(BEP.Servos.Geletandwiel, 1)
-BEP.servoWrite(BEP.Servos.Rechtwenkbrauw, 1)
-BEP.servoWrite(BEP.Servos.Linkerwenkbrauw, 1)
+BEP.servoWrite(BEP.Servos.Righteye, 1)
+BEP.servoWrite(BEP.Servos.Lefteye, 1)
+BEP.servoWrite(BEP.Servos.Yellowgear, 1)
+BEP.servoWrite(BEP.Servos.Righteyebrow, 1)
+BEP.servoWrite(BEP.Servos.LefteyeBrow, 1)
 ```
 Change the numbers and hit download.
 
