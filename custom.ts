@@ -38,7 +38,7 @@ namespace BEP {
         let PrescaleReg = 0xFE //the prescale register address
         let Mode1Reg = 0x00  //The mode 1 register address
      
-    // If you wanted to write some code that stepped through the servos then this is the BASe and size to do that 	
+    // If you wanted to write some code that stepped through the servos then this is the BASe and size to do that   
         let Servo1RegBase = 0x08 
         let ServoRegDistance = 4
         //To get the PWM pulses to the correct size and zero offset these are the default numbers. 
@@ -49,13 +49,13 @@ namespace BEP {
     
         //nice big list of servos for the block to use. These represent register offsets in the PCA9865
         export enum Servos {
-            Rechteroog = 0x08, // Rechteroog is pin 1
-            Linkeroog = 0x0C,		// Linkeroog is pin 2
-            Geletandwiel = 0x10,		// Omhoog of omlaag is pin 3
-            Rechterwenkbrauw = 0x14,		// Rechter wenkbrauw
-            Linkerwenkbrauw = 0x18,		// Linkerwenkbrauw 
-            //Servo6 = 0x1C,		
-            //Servo7 = 0x20,		
+            Righteye = 0x08, // Right eye on pin 0
+            Lefteye = 0x0C,     // Lefteye on pin 1
+            Yellowgear = 0x10,      // Look up and down on pin 2
+            Righteyebrow = 0x14,        // Right eyebrow on pin 3
+            Lefteyebrow = 0x18,     // Left eyebrow on pin 4
+            //Servo6 = 0x1C,        
+            //Servo7 = 0x20,        
             //Servo8 = 0x24,
             //Servo9 = 0x28,
             //Servo10 = 0x2C,
@@ -148,21 +148,21 @@ namespace BEP {
          * if the PCA has not yet been initialised calls the initialisation routine
          *
          * @param Servo Which servo to set
-         * @param stand the angle to set the servo to
+         * @param position the angle to set the servo to
          */
         //% blockId=BEP_I2Cservo_write
-        //% block="Zet %Servo|op stand %stand"
+        //% block="Put %Servo|on position %position"
         //% group="Servo motors"
-        //% stand.min=0 stand.max=2
+        //% position.min=0 position.max=2
         
-        export function servoWrite(Servo: Servos, stand: number): void {
+        export function servoWrite(Servo: Servos, position: number): void {
             if (initalised == false) {
                 secretIncantation()
             }
             
         // Calculate the right degrees, based on 4 step input: 1 = 15, 2 = 52,  3 = 89, 4 = 126, 5 = 163 with base = 15 degrees, intermdiate steps = 37
-        let choice = stand
-        let degrees2 = stand
+        let choice = position
+        let degrees2 = position
         
         if (choice <=0){
             degrees2= 50
@@ -174,7 +174,7 @@ namespace BEP {
             degrees2 = 125
         }
         //else if(choice >=3){
-        //    degrees2 = 110
+        //degrees2 = 110
         //}
         //else if(choice == 4){
         //degrees2 = 135
@@ -228,8 +228,8 @@ namespace BEP {
       * Sets the status LED to a given color (range 0-255 for r, g, b).
       * @param rgb colour of the LED
       */
-    //% blockId="val_set_led_color" block="Zet LED licht op %rgb=val_colours"
-    //% group="LED lampje"
+    //% blockId="val_set_led_color" block="Put LED light on %rgb=val_colours"
+    //% group="LED light"
     //% weight=100 
     export function setLedColor(rgb: number)
     {
@@ -246,8 +246,8 @@ namespace BEP {
     /**
       * Clear LED
       */
-    //% blockId="val_led_clear" block="LED uit"
-    //% group="LED lampje"
+    //% blockId="val_led_clear" block="LED off"
+    //% group="LED light"
     //% weight=10
     export function ledClear(): void
     {
@@ -265,9 +265,9 @@ namespace BEP {
      * Set the brightness of the LED
      * @param brightness a measure of LED brightness in 0-255. eg: 40
      */
-    //% blockId="val_led_brightness" block="Sterkte van het licht %brightness"
+    //% blockId="val_led_brightness" block="Brightness %brightness"
     //% brightness.min=0 brightness.max=255
-    //% group="LED lampje"
+    //% group="LED light"
     //% weight=50
     export function ledBrightness(brightness: number): void
     {
@@ -277,11 +277,11 @@ namespace BEP {
 
     /**
       * Get numeric value of colour
-      * @param color Standard RGB Led Colours eg: #ff0000
+      * @param color Positionard RGB Led Colours eg: #ff0000
       */
     //% blockId="val_colours" block=%color
     //% blockHidden=true
-    //% group="LED lampje"
+    //% group="LED light"
     //% weight=100
     //% blockGap=8
     //% shim=TD_ID colorSecondary="#e7660b"
@@ -313,10 +313,10 @@ namespace BEP {
 
     /**
       * Start Flashing
-      * @param color the colour to flash
+      * @param color the color to flash
       * @param delay time in ms for each flash, eg: 100,50,200,500
       */
-    //% blockId="startFlash" block="Knipper %color=val_colours| at %delay|(ms)"
+    //% blockId="startFlash" block="Flash %color=val_colours| at %delay|(ms)"
     //% delay.min=1 delay.max=10000
     //% weight=90
     export function startFlash(color: number, delay: number): void
