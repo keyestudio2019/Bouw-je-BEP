@@ -1,6 +1,6 @@
 {
     "name": "Bouw je BEP",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "description": "Blocks to use with the Bouw je BEP kit in PXT",
     "license": "MIT",
     "dependencies": {
