@@ -1,0 +1,18 @@
+{
+  "BEP": "Blocks for programming Bouw je BEP with the 4tronix Servobit I2C 16-Servo Driver Board",
+  "BEP.convertRGB": "Convert from RGB values to colour number\r\n* @param red Red value of the LED (0 to 255)",
+  "BEP.ledBrightness": "Set the brightness of the LED",
+  "BEP.ledBrightness|param|brightness": "a measure of LED brightness in 0-255. eg: 40",
+  "BEP.ledClear": "Clear LED",
+  "BEP.servoWrite": "sets the requested servo to the reguested angle.\r\nif the PCA has not yet been initialised calls the initialisation routine\r\n* @param Servo Which servo to set",
+  "BEP.servoWrite|param|position": "the angle to set the servo to",
+  "BEP.setLedColor": "Sets the status LED to a given color (range 0-255 for r, g, b).",
+  "BEP.setLedColor|param|rgb": "colour of the LED",
+  "BEP.startFlash": "Start Flashing",
+  "BEP.startFlash|param|color": "the color to flash",
+  "BEP.startFlash|param|delay": "time in ms for each flash, eg: 100,50,200,500",
+  "BEP.stopFlash": "Stop Flashing",
+  "BEP.vColours": "Get numeric value of colour",
+  "BEP.vColours|param|color": "Positionard RGB Led Colours eg: #ff0000",
+  "vColors": "Pre-Defined LED colours"
+}
