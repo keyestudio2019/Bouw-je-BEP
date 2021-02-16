@@ -11,6 +11,9 @@
     "files": [
         "README.md",
         "custom.ts"
+        "_locales/nl/Bouw je BEP-strings.json",
+        "_locales/nl/Bouw je BEP-jsdoc-strings.json",
+        
     ],
     "testFiles": [
         "test.ts"
