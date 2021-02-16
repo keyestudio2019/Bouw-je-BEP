@@ -1,0 +1,23 @@
+{
+  "BEP.convertRGB|block": "convert from red %red| green %green| blue %blue",
+  "BEP.ledBrightness|block": "Brightness %brightness",
+  "BEP.ledClear|block": "LED off",
+  "BEP.servoWrite|block": "Put %Servo|on position %position",
+  "BEP.setLedColor|block": "Put LED light on %rgb=val_colours",
+  "BEP.startFlash|block": "Flash %color=val_colours| at %delay|(ms)",
+  "BEP.vColours|block": "%color",
+  "BEP|block": "Bouw je BEP",
+  "vColors.Black|block": "black",
+  "vColors.Blue|block": "blue",
+  "vColors.Green|block": "green",
+  "vColors.Indigo|block": "indigo",
+  "vColors.Orange|block": "orange",
+  "vColors.Purple|block": "purple",
+  "vColors.Red|block": "red",
+  "vColors.Violet|block": "violet",
+  "vColors.White|block": "white",
+  "vColors.Yellow|block": "yellow",
+  "{id:category}BEP": "BEP",
+  "{id:group}LED light": "LED light",
+  "{id:group}Servo motors": "Servo motors"
+}
