@@ -1,7 +1,3 @@
-```package
-Bouw je BEP=github:bouw-je-bep/bouw-je-bep
-```
-
 # Bouw je BEP
 
 ## Daar gaan we! @unplugged
