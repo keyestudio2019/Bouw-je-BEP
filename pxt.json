@@ -11,10 +11,12 @@
     "files": [
         "README.md",
         "custom.ts",
+        "BEPles.md",
         "_locales/nl/Bouw je BEP-strings.json",
         "_locales/nl/Bouw je BEP-jsdoc-strings.json",
         "_locales/en/Bouw je BEP-strings.json",
         "_locales/en/Bouw je BEP-jsdoc-strings.json"
+
     ],
     "testFiles": [
         "test.ts"
