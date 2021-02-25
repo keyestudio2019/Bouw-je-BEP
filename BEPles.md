@@ -48,10 +48,6 @@ Gefeliciteerd je eerste programmeer les is gelukt! Laten we nu de BEP laten bewe
 
 ![Heart shape in the LEDs](/static/mb/projects/flashing-heart/sim.gif)
 
-```package
-Bouw je BEP=github:bouw-je-bep/bouw-je-bep#v1.0.14
-```
-
 # Lampje in BEP 
 
 ## BEP's discolamp @unplugged
