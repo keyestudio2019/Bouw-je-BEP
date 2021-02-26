@@ -11,7 +11,6 @@ In de deze les gaan we aan de slag met programmeren. Ik neem je stap voor stap m
 
 Alright? Let's go! 
 
-
 ### Geef BEP een hart! @showhint
 
 Sleep uit ``||basic:Basis||`` het blokje ``||basic:toon lichtjes||`` en zet hem in de ``||basic:de hele tijd||`` blok en teken een hart!
@@ -84,7 +83,6 @@ Sleep links uit ``||BEP:Bouw je BEP||`` het blokje ``||bep:Zet LED licht op||``
 en plaats hem in de ``||basic:de hele tijd||`` blok en kies je favoriete kleur!
 
 ```blocks
-music.playMelody("- - - - - - - - ", 120)
 basic.showString("BEP")
 basic.forever(function () {
     basic.showLeds(`
@@ -97,3 +95,102 @@ basic.forever(function () {
     BEP.setLedColor(0x00FF00)
 })
 ```
+
+## 2. BEP's discolicht gebruiken
+
+### BEP's discolicht gebruiken @showdialog
+
+Zoals je al hebt kunnen zien heeft BEP een cool discolampje op het extensiebord.
+In de volgende stappen leer ik je verschillende kleuren licht te programmeren!
+
+![Uitvinder Oma](HYPERLINK NAAR AFBEELDING ONLINE)
+
+### Step 1 @showhint
+
+Sleep links uit ``||BEP:Bouw je BEP||`` het blokje ``||bep:Zet LED licht op||``  
+en plaats hem in de ``||basic:de hele tijd||`` blok en kies je favoriete kleur!
+
+```blocks
+basic.showString("BEP")
+basic.forever(function () {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # #
+        . # # # .
+        . . # . .
+        `)
+    BEP.setLedColor(0x00FF00)
+})
+```
+### Step 2
+Klik nu weer op de knop ``|Download|`` zodat je je code stuurt naar de micro:bit. 
+
+### Step 3
+
+Top! Maar 1 kleur licht is natuurlijk geen discolicht. Daar gaan we wat aan doen!
+Sleep uit ``||basic:Basis||`` het blokje ``||basic:pauzeer (ms)||`` en zet hem 
+in de ``||basic:de hele tijd||`` onder ``||bep:Zet licht op||``.
+
+```blocks
+basic.showString("BEP")
+basic.forever(function () {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # .
+        . # # # .
+        . . # . .
+        `)
+    BEP.setLedColor(0x00FF00)
+    basic.pause(100)
+})
+```
+
+### Step 4
+Zet de ``||basic:pauzeer (ms)||`` op 1 seconde.
+
+```blocks
+basic.showString("BEP")
+basic.forever(function () {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # .
+        . # # # .
+        . . # . .
+        `)
+    BEP.setLedColor(0x00FF00)
+    basic.pause(1000)
+})
+```
+
+### Step 5
+Zet nu een extra ``||bep:Zet licht op||`` met een andere kleur onder de ``||basic:pauzeer (ms)||``
+en zet ook daaronder weer een ``||basic:pauzeer (ms)||`` op 1 seconde.
+
+```blocks
+basic.showString("BEP")
+basic.forever(function () {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # .
+        . # # # .
+        . . # . .
+        `)
+    BEP.setLedColor(0x00FF00)
+    basic.pause(1000)
+    BEP.setLedColor(0x0080FF)
+    basic.pause(1000)
+})
+```
+### Step 6
+Klik nu weer op de knop ``|Download|`` zodat je je code stuurt naar de micro:bit. 
+
+### Gelukt?!
+
+Knippert jouw licht nu ook? Je kunt op deze manier nog meer licht kleuren erbij maken!
+BEP beweegt ondanks het discolicht nog niet.. Zullen we daar eens verandering inbrengen?
+
+Op naar de laatste stap!
