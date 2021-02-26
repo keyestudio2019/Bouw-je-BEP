@@ -194,3 +194,76 @@ Knippert jouw licht nu ook? Je kunt op deze manier nog meer licht kleuren erbij 
 BEP beweegt ondanks het discolicht nog niet.. Zullen we daar eens verandering inbrengen?
 
 Op naar de laatste stap!
+
+## 3. BEP laten bewegen
+
+### Step 1 
+Sleep uit ``||basic:Basis||`` het blokje ``||basic:de hele tijd||`` en zet 
+deze naast de andere ``||basic:de hele tijd||``.
+
+```blocks
+basic.showString("BEP")
+basic.forever(function () {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # .
+        . # # # .
+        . . # . .
+        `)
+    BEP.setLedColor(0x00FF00)
+    basic.pause(1000)
+    BEP.setLedColor(0x0080FF)
+    basic.pause(1000)
+})
+basic.forever(function () {
+})
+```
+
+### Step 2 @showhint
+
+Sleep 5 ``||bep:Breng ... naar positie||`` blokken uit ``||bep:Bouw je BEP||`` 
+naar de nieuwe ``||basic:de hele tijd||``.
+```blocks
+basic.forever(function () {
+    BEP.servoWrite(BEP.Servos.Rechteroog, 0)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 0)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 0)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 0)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 0)
+})
+```
+
+### Step 2 @showhint
+
+Zet nu elke ``||bep:Breng ... naar positie||`` op ander een onderdeel van BEP en zet de positie zoals aangegeven op het voorbeeld hieronder.
+```blocks
+})
+basic.forever(function () {
+    BEP.servoWrite(BEP.Servos.Rechteroog, 0)
+    BEP.servoWrite(BEP.Servos.Linkeroog, 2)
+    BEP.servoWrite(BEP.Servos.Geletandwiel, 1)
+    BEP.servoWrite(BEP.Servos.Rechterwenkbrauw, 1)
+    BEP.servoWrite(BEP.Servos.Linkerwenkbrauw, 1)
+})
+```
+### Step 3 @showhint
+Zet nu een ``||basic:pauzeer (ms)||`` onder de laatste ``||bep:Breng ... naar positie||`` op 1 seconde.
+```blocks
+basic.forever(function () {
+    BEP.servoWrite(BEP.Servos.Rechteroog, 0)
+    BEP.servoWrite(BEP.Servos.Linkeroog, 2)
+    BEP.servoWrite(BEP.Servos.Geletandwiel, 1)
+    BEP.servoWrite(BEP.Servos.Rechterwenkbrauw, 1)
+    BEP.servoWrite(BEP.Servos.Linkerwenkbrauw, 1)
+    basic.pause(1000)
+    BEP.servoWrite(BEP.Servos.Rechteroog, 2)
+    BEP.servoWrite(BEP.Servos.Linkeroog, 0)
+    BEP.servoWrite(BEP.Servos.Geletandwiel, 0)
+    BEP.servoWrite(BEP.Servos.Rechterwenkbrauw, 2)
+    BEP.servoWrite(BEP.Servos.Linkerwenkbrauw, 1)
+    basic.pause(1000)
+})
+```
+
+### Finish
