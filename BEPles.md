@@ -1,10 +1,10 @@
-# Bouw je BEP
+# BEP tot leven brengen!
 
 ## 1. Daar gaan we! @unplugged
 
-In de volgende stappen gaan we aan de slag met programmeren. Lees alle stappen goed door. 
+In de deze les gaan we aan de slag met programmeren. Ik neem je stap voor stap mee hoe dat moet. Lees wel al mijn aanwijzingen goed door. 
 
-Let's go! 
+Alright? Let's go! 
 ![BEP figuur](HYPERLINK NAAR AFBEELDING ONLINE)
 
 ## 2. Geef BEP een hart! @showhint
@@ -58,3 +58,34 @@ basic.forever(function() {
 ## 5. De code naar BEP sturen
 Zoals je hebt gemerkt werkt je geprogrammeerde code niet direct op jouw BEP. Daarvoor moeten we hem eerst ``|Download|`` naar de micro:bit. 
 Als je de @boardname@ aan hebt gesloten met de USB kabel op je chromebook mag je op ``|Download|`` klikken om jouw code naar BEP te sturen!
+
+# Lampje van BEP
+
+## 1. De code naar BEP sturen @unplugged
+![gif werkende BEP](https://bouwjebep.nl/wp-content/uploads/2020/10/BEP2-1024x1024.png)
+
+Gelukt?! Gefeliciteerd je bent programmeur! 
+
+Zoals je al hebt kunnen zien heeft BEP een cool discolampje op het extensiebord.
+In de volgende stappen leer ik je verschillende kleuren licht te programmeren! 
+
+## 2. Eerste kleur
+
+Sleep links uit ``||BEP:Bouw je BEP||`` het blokje ``||bep:Zet LED licht op||``  
+en plaats hem in de ``||basic:de hele tijd||`` blok en kies je favoriete kleur!
+
+```blocks
+music.playMelody("- - - - - - - - ", 120)
+basic.showString("BEP")
+basic.forever(function () {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # #
+        . # # # .
+        . . # . .
+        `)
+    BEP.setLedColor(0x00FF00)
+})
+
+```
