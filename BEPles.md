@@ -1,21 +1,21 @@
 # Bouw je BEP
 
-## Daar gaan we! @unplugged
+## 1. Daar gaan we! @unplugged
 
-In de volgende stappen gaan we aan de slag met programmeren. Lees alle stappen goed door. Je kunt op het lamp icoon klikken als je meer informatie nodig hebt.
+In de volgende stappen gaan we aan de slag met programmeren. Lees alle stappen goed door. 
 
 Let's go! 
 ![BEP figuur](HYPERLINK NAAR AFBEELDING ONLINE)
 
-## Geef BEP een hart! @fullscreen
+## 2. Geef BEP een hart! @showhint
 
-Sleep de ``||basic:show leds||`` (toon lichtjes) blok in de ``||basic:forever||`` (de hele tijd) blok en teken een hart!
+Sleep uit ``||basic:Basis||`` het blokje ``||basic:toon lichtjes||`` en zet hem in de ``||basic:de hele tijd||`` blok en teken een hart!
 
 ![An animation that shows how to drag a block and paint a heart](/static/mb/projects/flashing-heart/showleds.gif)
 
-## Geef BEP een naam! @showhint
-
-Sleep nu uit Basis het blokje ``||basic.showString||`` (toon tekens). Je kan hier de naam van jouw BEP in typen.
+```namespace```
+Het komt er dan zoals hieronder uit te zien!
+```
 
 ```blocks
 basic.forever(function() {
@@ -25,44 +25,36 @@ basic.forever(function() {
         # # # # #
         . # # # .
         . . # . .`);
-    basic.showString("BEP");
 })
 ```
 
-## Controleer je code!
-
-Als het goed is zie je nu links bij de virtuele @boardname@, BEP's hart en naam voorbij komen.
-
-## De code naar BEP sturen
-
-Je code werkt niet gelijk op de BEP. Daarvoor moeten we hem eerst aansluiten en downloaden. 
-Sluit met de USB kabel de @boardname@ aan op je chromebook, klik daarna op ``|Download|`` om jouw code naar BEP te sturen!
-
-![Heart shape in the LEDs](/static/mb/projects/flashing-heart/sim.gif)
-
-## Gelukt!
-
-Als het downloaden is gelukt zie je ook het hart en BEP's naam op de echte @boardname@ verschijnen!
-
-Gefeliciteerd je eerste programmeer les is gelukt! Laten we nu de BEP laten bewegen!
-
-![Heart shape in the LEDs](/static/mb/projects/flashing-heart/sim.gif)
-
-# Lampje in BEP 
-
-## BEP's discolamp @unplugged
-Zoals je al hebt kunnen zien heeft BEP een cool discolampje op het extensiebord.
-In de volgende stappen leer ik je verschillende kleuren licht te programmeren! 
-
-![Uitvinder Oma](https://bouwjebep.nl/wp-content/uploads/2020/10/BEP2-1024x1024.png)
-
-
-## stap 1 @fullscreen
-
-Sleep links uit ``|BEP:Bouw je BEP|`` het blokje ``||bep:setLedColor||``  
-en plaats hem in de ``||basic:bij opstarten||`` blok en kies je favoriete kleur!
+## 3. Geef BEP een naam! @showhint
+Sleep nu uit ``||basic:Basis||`` het blokje ``||basic:toon tekens||`` en zet deze in ``||basic:bij opstarten||``. Schrijf in dit nieuwe blok de naam van jouw BEP.
 
 ```blocks
-BEP.setLedColor(0xFF0000)
+basic.showString("typ hier de naam van jouw BEP")
 })
 ```
+
+## 4. Controleer je code! @showhint
+Je zou nu links bij de 'test' @boardname@ op je scherm, 1x BEP's naam moeten zien en daarna het hart.
+
+Dat komt door de twee start blokken ``||basic:bij opstarten||`` en ``||basic:de hele tijd||``
+Als de micro:bit aangaat zal deze eerst alle blokjes uit de ``||basic:bij opstarten||`` uitvoeren en daarna herhaald de micro:bit de blokjes uit ``||basic:de hele tijd||``
+
+Als dit is gelukt gaan we dit nu op jouw BEP programmeren!
+```blocks
+basic.showString("BEP")
+basic.forever(function() {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # #
+        . # # # .
+        . . # . .`);
+})
+```
+
+## 5. De code naar BEP sturen
+Zoals je hebt gemerkt werkt je geprogrammeerde code niet direct op jouw BEP. Daarvoor moeten we hem eerst ``|Download|`` naar de micro:bit. 
+Als je de @boardname@ aan hebt gesloten met de USB kabel op je chromebook mag je op ``|Download|`` klikken om jouw code naar BEP te sturen!
