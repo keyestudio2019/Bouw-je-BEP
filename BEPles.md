@@ -44,7 +44,7 @@ basic.forever(function() {
 })
 ```
 
-### De code naar BEP sturen @unplugged
+### De code naar BEP sturen @fullscreen
 Hiervoor moeten wij de code eerst ``|Downloaden|`` naar de micro:bit.
 Als je de @boardname@ aan hebt gesloten met de USB kabel op je chromebook, moet je de micro:bit vaak eerst koppelen zoals in het filmpje.
 ![Koppelen van de microbit](/static/mb/projects/flashing-heart/showleds.gif)
@@ -52,10 +52,8 @@ Als dat is gelukt kun je nu op ``|Downloaden|`` klikken om jouw code naar BEP te
 
 ### De code naar BEP sturen @unplugged
 # Gelukt?!
-
-![gif werkende BEP](https://bouwjebep.nl/wp-content/uploads/2020/10/BEP2-1024x1024.png)
-
 Is dit ook bij jou gelukt?! Gefeliciteerd je bent nu officiëel een programmeur! 
+![Uitvinder Oma](https://bouwjebep.nl/wp-content/uploads/2021/03/uitvinderoma-klein.png)
 
 ## 2. BEP's discolicht gebruiken
 
@@ -63,7 +61,6 @@ Is dit ook bij jou gelukt?! Gefeliciteerd je bent nu officiëel een programmeur!
 
 Zoals je al hebt kunnen zien heeft BEP een cool discolampje op het extensiebord.
 In de volgende stappen leer ik je verschillende kleuren licht te programmeren!
-
 ![Uitvinder Oma](https://bouwjebep.nl/wp-content/uploads/2021/03/uitvinderoma-klein.png)
 
 ### Step 1 @showhint
@@ -84,16 +81,6 @@ basic.forever(function () {
     BEP.setLedColor(0x00FF00)
 })
 ```
-
-## 2. BEP's discolicht gebruiken
-
-### BEP's discolicht gebruiken @showdialog
-
-Zoals je al hebt kunnen zien heeft BEP een cool discolampje op het extensiebord.
-In de volgende stappen leer ik je verschillende kleuren licht te programmeren!
-
-![Uitvinder Oma](https://bouwjebep.nl/wp-content/uploads/2021/03/uitvinderoma-klein.png)
-
 ### Step 1 @showhint
 
 Sleep links uit ``||BEP:Bouw je BEP||`` het blokje ``||bep:Zet LED licht op||``  
@@ -116,7 +103,6 @@ basic.forever(function () {
 Klik nu weer op de knop ``|Download|`` zodat je je code stuurt naar de micro:bit. 
 
 ### Step 3
-
 Top! Maar 1 kleur licht is natuurlijk geen discolicht. Daar gaan we wat aan doen!
 Sleep uit ``||basic:Basis||`` het blokje ``||basic:pauzeer (ms)||`` en zet hem 
 in de ``||basic:de hele tijd||`` onder ``||bep:Zet licht op||``.
