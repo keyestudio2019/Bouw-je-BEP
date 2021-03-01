@@ -57,30 +57,12 @@ Is dit ook bij jou gelukt?! Gefeliciteerd je bent nu officiëel een programmeur!
 
 ## 2. BEP's discolicht gebruiken
 
-### BEP's discolicht gebruiken @showdialog
+### BEP's discolicht gebruiken @fullscreen
 
 Zoals je al hebt kunnen zien heeft BEP een cool discolampje op het extensiebord.
 In de volgende stappen leer ik je verschillende kleuren licht te programmeren!
 ![Uitvinder Oma](https://bouwjebep.nl/wp-content/uploads/2021/03/uitvinderoma-klein.png)
 
-### Step 1 @showhint
-
-Sleep links uit ``||BEP:Bouw je BEP||`` het blokje ``||bep:Zet LED licht op||``  
-en plaats hem in de ``||basic:de hele tijd||`` blok en kies je favoriete kleur!
-
-```blocks
-basic.showString("BEP")
-basic.forever(function () {
-    basic.showLeds(`
-        . # . # .
-        # # # # #
-        # # # # #
-        . # # # .
-        . . # . .
-        `)
-    BEP.setLedColor(0x00FF00)
-})
-```
 ### Step 1 @showhint
 
 Sleep links uit ``||BEP:Bouw je BEP||`` het blokje ``||bep:Zet LED licht op||``  
@@ -140,7 +122,7 @@ basic.forever(function () {
 })
 ```
 
-### Step 5
+### Step 5 @fullscreen
 Zet nu een extra ``||bep:Zet licht op||`` met een andere kleur onder de ``||basic:pauzeer (ms)||``
 en zet ook daaronder weer een ``||basic:pauzeer (ms)||`` op 1 seconde.
 
@@ -163,11 +145,11 @@ basic.forever(function () {
 ### Step 6
 Klik nu weer op de knop ``|Download|`` zodat je je code stuurt naar de micro:bit. 
 
-### Gelukt?!
+### Gelukt?! @unplugged
 
-Knippert jouw licht nu ook? Je kunt op deze manier nog meer licht kleuren erbij maken!
+Knippert jouw licht nu ook? Je kunt op deze manier nog meer kleuren erbij maken!
 BEP beweegt ondanks het discolicht nog niet.. Zullen we daar eens verandering inbrengen?
-
+![Uitvinder Oma](https://bouwjebep.nl/wp-content/uploads/2021/03/uitvinderoma-klein.png)
 Op naar de laatste stap!
 
 ## 3. BEP laten bewegen 
@@ -229,6 +211,8 @@ basic.forever(function () {
 
 Als dit is gelukt mag je weer op ``|Downloaden|`` klikken! Wat doet BEP nu?
 
+
+### Step 5 
 Probeer nu eens andere posities uit in je programma. Nu je weet hoe je de servo motoren kunt aansturen mag je BEP een emotie programmeren zoals: boos, blij of verdrietig.
 Je mag hier ook de kleur van het licht voor gebruiken!
 
@@ -243,7 +227,7 @@ basic.forever(function () {
     BEP.servoWrite(BEP.Servos.Linkerwenkbrauw, 1)
 })
 ```
-### Step 5 @showhint
+### Step 6 @showhint
 Heb je BEP een emotie kunnen geven? Wat goed!
 
 We gaan deze emotie nu op een knop zetten. Om dat te doen sleep je uit ``||input:input||`` het blok ``||input:wanneer knop A wordt ingedrukt||``
@@ -252,23 +236,24 @@ en sleep deze in het werkveld.
 input.onButtonPressed(Button.A, function () {
 })
 ```
-### Step 6 @showhint
-Je kan nu in één keer je emotie overslepen naar de ``||input:wanneer knop A wordt ingedrukt||`` blok. Je kunt bij de tip zien hoe.
+### Step 7 @showhint
+Je kan nu in één keer je emotie overslepen naar de ``||input:wanneer knop A wordt ingedrukt||`` blok. Je kunt bij de tip zien hoe dit trucje werkt.
 
 GIF
 
-### Step 7 @showhint
+### Step 8 @showhint
 Rechterklik nu eens op  ``||input:wanneer knop A wordt ingedrukt||`` blok. Klik dan op dupliceren. Je kunt bij de tip zien hoe dat moet!
 
 één van de blokjes is nu grijs. Dat betekend dat hij niet kan werken. Dit komt omdat er maar 1 programma per knop kan worden gemaakt. Je kunt dit oplossen door ``||input:A||`` te veranderen in ``||input:B||``!
+Je kunt bij de tip goed zien hoe dit moet!
 ```blocks
 input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.B, function () {
 })
 ```
-### Step 8 
-Verander nu de posities onder de knop ``||input:A||`` en druk daarna weer op ``|Downloaden|``.
+### Step 9 
+Verander nu de posities onder de knop ``||input:B||`` en druk daarna weer op ``|Downloaden|``.
 Je kunt nu op knop A en B drukken om BEP te laten bewegen!
 
 ```blocks
@@ -287,7 +272,7 @@ input.onButtonPressed(Button.B, function () {
     BEP.servoWrite(BEP.Servos.Linkerwenkbrauw, 0)
 })
 ```
-### Finish @showdialog
+### Finish @unplugged
 Je hebt alle basisstappen voltooid om BEP te programmeren! Ik ben trots op je! 
 ![Uitvinder Oma](https://bouwjebep.nl/wp-content/uploads/2021/03/uitvinderoma-klein.png)
 Als je verder gaat kun je nog veel meer blokken gebruiken om jouw BEP te programmeren. 
