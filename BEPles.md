@@ -1,4 +1,3 @@
-### @diffs true
 ### @activities 1
 
 ## 1. BEP tot leven brengen
@@ -274,7 +273,8 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 ### Finish @unplugged
-Je hebt alle basisstappen voltooid om BEP te programmeren! Ik ben super trots op je! Als je verder gaat kun je nog veel meer blokken gebruiken om jouw BEP te programmeren. 
+# Je hebt alle basisstappen voltooid om BEP te programmeren! 
+Ik ben super trots op je! Als je verder gaat kun je nog veel meer blokken gebruiken om jouw BEP te programmeren. 
 ![Uitvinder Oma](https://bouwjebep.nl/wp-content/uploads/2021/03/uitvinderoma-klein.png)
 **Je kunt nu verder programmeren of terug naar de lessen in LessonUp!**
 
