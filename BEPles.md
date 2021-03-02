@@ -1,4 +1,3 @@
-### @hideIteration true
 ### @diffs true
 ### @activities 1
 
