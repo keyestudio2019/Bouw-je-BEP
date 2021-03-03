@@ -55,7 +55,7 @@ basic.forever(function() {
 ### Stap 5 De code naar BEP sturen @fullscreen
 Hiervoor moeten wij de code eerst ``|Downloaden|`` naar de micro:bit.
 Als je de @boardname@ aan hebt gesloten met de USB kabel op je chromebook, moet je de micro:bit vaak **eerst koppelen** zoals in het filmpje.
-![Koppelen van de microbit](https://gifyu.com/image/ZVIe)
+![Koppelen van de microbit](https://s4.gifyu.com/images/BEP-microbit-koppelen-2.gif)
 Als dat is gelukt kun je nu op ``|Downloaden|`` klikken om jouw code naar BEP te sturen!
 
 ### Stap 6 De code naar BEP sturen @unplugged
