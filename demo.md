@@ -3,10 +3,10 @@
 
 # Downloaden
 
-## Step 1
+## Step 1 @fullscreen
 1. Wanneer je de micro:bit hebt aangesloten en gekoppeld hebt mag je op ``|Downloaden|`` klikken.
 2. Als dit is gelukt ontstaat er een klein hartje op het micro:bit schermpje en gaat de discolicht knipperen.
-3. **Nu mag je BEP verder opruimen en terug naar LessonUp!**
+3. **Ga nu terug naar LessonUp!**
 ![Koppelen van de microbit](https://s4.gifyu.com/images/BEP-microbit-koppelen-2.gif)
 ```template
 for (let index = 0; index < 3; index++) {
