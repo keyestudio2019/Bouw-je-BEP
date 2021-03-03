@@ -68,7 +68,7 @@ Is dit ook bij jou gelukt?! **Gefeliciteerd je bent nu officiëel een programmeu
 ### Stap 7 BEP's discolicht gebruiken @fullscreen
 Zoals je al hebt kunnen zien heeft BEP een cool discolampje op het extensiebord.
 In de volgende stappen leer ik je verschillende kleuren licht te programmeren!
-![Discolicht](https://bouwjebep.nl/wp-content/uploads/2021/03/disco-5-leds.gif)
+![Discolicht](https://s4.gifyu.com/images/disco-5-leds.gif)
 
 ### Stap 8 @showhint
 Sleep links uit ``||BEP:Bouw je BEP||`` het blokje ``||bep:Zet LED licht op||``  
@@ -153,7 +153,7 @@ Klik nu weer op de knop ``|Download|`` zodat je je code stuurt naar de micro:bit
 
 ### Stap 14
 Knippert jouw licht nu ook? Je kunt op deze manier nog meer kleuren erbij maken!
-![Discolicht](https://bouwjebep.nl/wp-content/uploads/2021/03/disco-5-leds.gif)
+![Discolicht](https://s4.gifyu.com/images/disco-5-leds.gif)
 
 ### Stap 15 Gelukt?! @unplugged
 BEP beweegt ondanks het discolicht nog niet.. Zullen we daar eens verandering inbrengen?
@@ -201,7 +201,7 @@ basic.forever(function () {
 
 ### Stap 19 @showhint
 Weet je nog dat je goed moest kijken welk onderdeel van BEP je op welke pin moest aansluiten? Dat komt omdat we elke servo motor apart aansturen!
-![Servo toewijzen en positie](https://bouwjebep.nl/wp-content/uploads/2021/03/BEP-Servo-toewijzen-en-positie.gif)
+![Servo toewijzen en positie](https://s4.gifyu.com/images/BEP-Servo-toewijzen-en-positie.gif)
 Zet nu **elke** ``||bep:Breng ... naar positie||`` op ander een onderdeel van BEP en zet de positie zoals aangegeven op het voorbeeld.
 
 ```blocks
@@ -225,7 +225,7 @@ BEP kijkt nu anders dan net! Nu weet je hoe servo motoren aangestuurd worden.
 
 ### Stap 22 
 **Laat nu BEP boos, blij of verdrietig kijken.**
-![voorbeeld BEP2](https://bouwjebep.nl/wp-content/uploads/2021/03/20210302_163440.gif)
+![voorbeeld BEP2](https://s4.gifyu.com/images/20210302_163440.gif)
 
 
 ### Stap 23 @showhint
@@ -239,12 +239,11 @@ input.onButtonPressed(Button.A, function () {
 ```
 ### Stap 24 @showhint
 Je kan nu in één keer je emotie overslepen naar de ``||input:wanneer knop A wordt ingedrukt||`` blok. **Je kunt bij de tip zien hoe dit trucje werkt!**
-
-![Blokken verslepen](https://bouwjebep.nl/wp-content/uploads/2021/03/BEP-Emotie-blokken-naar-knop-A-slepen.gif)
+![Blokken verslepen](https://s4.gifyu.com/images/BEP--Emotie-blokken-naar-knop-A-slepen.gif)
 
 ### Stap 25 @showhint
 Rechterklik nu eens op  ``||input:wanneer knop A wordt ingedrukt||`` blok. Klik dan op dupliceren. Je kunt bij de tip zien hoe dat moet!
-![Blokken dupliceren](https://bouwjebep.nl/wp-content/uploads/2021/03/BEP-Knop-A-dupliceren.gif)
+![Blokken dupliceren](https://s4.gifyu.com/images/BEP--Knop-A-dupliceren.gif)
 één van de blokjes is nu grijs. Dat betekend dat hij niet kan werken. Dit komt omdat er maar 1 programma per knop kan worden gemaakt. Je kunt dit oplossen door ``||input:A||`` te veranderen in ``||input:B||``!
 **Je kunt bij de tip goed zien hoe dit moet!**
 ```blocks
