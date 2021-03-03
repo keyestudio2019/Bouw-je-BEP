@@ -199,7 +199,7 @@ basic.forever(function () {
 })
 ```
 
-### Stap 19 @showhint
+### Stap 19 @fullscreen
 Weet je nog dat je goed moest kijken welk onderdeel van BEP je op welke pin moest aansluiten? Dat komt omdat we elke servo motor apart aansturen!
 ![Servo toewijzen en positie](https://s4.gifyu.com/images/BEP-Servo-toewijzen-en-positie.gif)
 Zet nu **elke** ``||bep:Breng ... naar positie||`` op ander een onderdeel van BEP en zet de positie zoals aangegeven op het voorbeeld.

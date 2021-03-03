@@ -49,11 +49,11 @@ namespace BEP {
     
         //nice big list of servos for the block to use. These represent register offsets in the PCA9865
         export enum Servos {
-            Rechteroog = 0x08, // Right eye on pin 0
-            Linkeroog = 0x0C,     // Lefteye on pin 1
-            Geletandwiel = 0x10,      // Look up and down on pin 2
-            Rechterwenkbrauw = 0x14,        // Right eyebrow on pin 3
-            Linkerwenkbrauw = 0x18,     // Left eyebrow on pin 4
+            Rechteroog= 0x08, // Right eye on pin 0
+            Linkeroog= 0x0C,     // Lefteye on pin 1
+            Geletandwiel= 0x10,      // Look up and down on pin 2
+            Rechterwenkbrauw= 0x14,        // Right eyebrow on pin 3
+            Linkerwenkbrauw= 0x18,     // Left eyebrow on pin 4
             //Servo6 = 0x1C,        
             //Servo7 = 0x20,        
             //Servo8 = 0x24,
