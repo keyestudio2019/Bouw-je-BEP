@@ -34,7 +34,7 @@ namespace BEP {
         let _flashing = false;
 
     //Some useful parameters. 
-        let ChipAddress = 0x40 //default Chip address
+        let ChipAddress = 0x47 //default Chip address
         let PrescaleReg = 0xFE //the prescale register address
         let Mode1Reg = 0x00  //The mode 1 register address
      
@@ -68,7 +68,7 @@ namespace BEP {
         }
     
         export enum BoardAddresses{
-            Board1 = 0x40,
+            Board1 = 0x47,
             
         }
         //Trim the servo pulses. These are here for advanced users, and not exposed to blocks.
