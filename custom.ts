@@ -63,8 +63,8 @@ namespace BEP {
             //Servo12 = 0x34,
             //Servo13 = 0x38,
             //Servo14 = 0x3C,
-            //Servo15 = 0x40,
-            //Servo16 = 0x44,
+            Servo15 = 0x40,
+            Servo16 = 0x44,
         }
     
         export enum BoardAddresses{
